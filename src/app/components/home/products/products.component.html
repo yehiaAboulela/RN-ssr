@@ -1,0 +1,115 @@
+<section class="products-sec">
+  <div class="container">
+    @if(lang == 'en'){
+    <h2 class="h1 mb-5 fw-bold" data-aos="fade-right">Our Services</h2>
+    } @else if(lang == 'ar'){
+    <h2 class="h1 mb-5 fw-bold" data-aos="fade-right">منتجاتنا</h2>
+
+    }
+    <div class="row align-items-center">
+      <div class="col-lg-6 d-none d-lg-block" data-aos="fade-right">
+        <img [src]="src" alt="product-img" class="product-img 1" />
+      </div>
+      @if(lang == 'en'){
+      <div class="col-lg-6">
+        <div class="products">
+          <a
+            class="product"
+            routerLink="/services"
+            (mouseover)="
+              src = 'https://tools.royalshieldworld.com/public/imgs/HYPERD+.png'
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">Diamond Hybrid Plus</h3>
+            <h4 class="text-end">Nano ceramic</h4>
+          </a>
+          <a
+            class="product"
+            routerLink="/services"
+            fragment="nano-graphene"
+            (mouseover)="
+              src = 'https://tools.royalshieldworld.com/public/imgs/GRAPHNE.png'
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">Graphene Hybrid Plus</h3>
+            <h4 class="text-end">Nano Graphene</h4>
+          </a>
+          <a
+            class="product"
+            routerLink="/services"
+            fragment="ppf"
+            (mouseover)="
+              src = 'https://tools.royalshieldworld.com/public/imgs/max-pro.png'
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">Max Pro</h3>
+            <h4 class="text-end">Paint Protection</h4>
+          </a>
+          <a
+            class="product"
+            routerLink="/services"
+            fragment="thermal-insulation"
+            (mouseover)="
+              src =
+                'https://tools.royalshieldworld.com/public/imgs/shield-ultra-cool.png'
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">Shield UltraCool</h3>
+            <h4 class="text-end">Thermal Insulation</h4>
+          </a>
+        </div>
+      </div>
+      }@else if (lang == 'ar'){
+      <div class="col-md-6">
+        <div class="products">
+          <div
+            class="product"
+            (mouseover)="
+              src = 'https://tools.royalshieldworld.com/public/imgs/HYPERD+.png'
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">دايموند هايبرد بلس</h3>
+            <h4 class="text-end">نانوسيراميك</h4>
+          </div>
+          <div
+            class="product"
+            (mouseover)="
+              src = 'https://tools.royalshieldworld.com/public/imgs/GRAPHNE.png'
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">جرافين هايبرد بلس</h3>
+            <h4 class="text-end">نانوجرافين</h4>
+          </div>
+          <div
+            class="product"
+            (mouseover)="
+              src = 'https://tools.royalshieldworld.com/public/imgs/max-pro.png'
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">ماكس برو</h3>
+            <h4 class="text-end">بروتيكشن فيلم</h4>
+          </div>
+          <div
+            class="product"
+            (mouseover)="
+              ('https://tools.royalshieldworld.com/public/imgs/shield-ultra-cool.png')
+            "
+            data-aos="fade-left"
+          >
+            <h3 class="text-start">شيلد الترا كول</h3>
+            <h4 class="text-end">عزل حراري</h4>
+          </div>
+        </div>
+      </div>
+
+      }
+    </div>
+  </div>
+</section>

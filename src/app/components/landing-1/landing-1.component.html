@@ -1,0 +1,645 @@
+<main dir="ltr">
+  <header>
+    <div class="intro">
+      <h1>Protect Your Car with Royal Nano Ceramic</h1>
+      <p>
+        We offer you advanced protection technology that guarantees your car the
+        strongest resistance to scratches and weather elements, giving it a
+        shine that lasts for years! Invest in your car today and enjoy peace of
+        mind with a fresh look every day.
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>Book Your Appointment Now</h3>
+          <p>And Get the Strongest Warranty</p>
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/U1y1RiqBsT8')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid6.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+    </section>
+
+    <section class="befor-after">
+      <app-comparison-slider></app-comparison-slider>
+    </section>
+
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>What Do Our Customers Say?</h3>
+          <p>Visit by the Actress Enas El-Naggar</p>
+
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/SvCTtUpAs2M')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid7.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              I have been using it for a year, and thank God, the car is more
+              beautiful than when I received it from the showroom.
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client1.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Farag Louis</h4>
+                <span class="text-black-50 fw-bold ms-2">Nasr City</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              My friends have been recommending this place for three years, and
+              honestly, I was amazed by the car when I came.
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client2.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Yasmin</h4>
+                <span class="text-black-50 fw-bold ms-2">October</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              My car is brand new, but when I came to collect it, it was better
+              than brand new.
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client3.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Nancy</h4>
+                <span class="text-black-50 fw-bold ms-2">Nasr City</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              I have been using it since 2021, and my car shines with the beauty
+              that we all love to see in our cars.
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client4.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Ahmed Aita</h4>
+                <span class="text-black-50 fw-bold ms-2">October</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">These people have never disappointed me.</p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client5.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Ali</h4>
+                <span class="text-black-50 fw-bold ms-2">The Place</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              I have been following you for a year, and I was afraid to make a
+              decision, but once I did and chose Royal Nano, I have no regrets.
+              I am truly amazed by my car.
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client6.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Nadia</h4>
+                <span class="text-black-50 fw-bold ms-2">October</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              I saw many videos and reviews, but I didn't expect to see such
+              beauty in reality.
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client7.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Abdullah</h4>
+                <span class="text-black-50 fw-bold ms-2">The Place</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              Today I did the maintenance after six months. I am happy that
+              there is a company in Egypt with such excellence in after-sales
+              service. I recommend anyone in Egypt who wants protection to
+              contact Royal Nano Ceramic.
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client8.jpg" alt="Client" />
+              </div>
+              <div class="client-name">
+                <h4>Yahya</h4>
+                <span class="text-black-50 fw-bold ms-2">The Place</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </section>
+
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>What Do Our Customers Say?</h3>
+          <p>Visit by the Actor Mahmoud Hafez</p>
+
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/KwzZ--X9pvs')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid8.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What is Nano Ceramic?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Nano ceramic is an advanced protective layer applied to a car's
+              surface, creating a shield against scratches, dirt, and dust,
+              while maintaining the car's shine for a long time. This technology
+              is made up of nano particles that penetrate the paint surface and
+              reinforce it.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              What are the Benefits of Nano Ceramic?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Protection against minor scratches and scuffs. Resistance to dirt,
+              dust, and water (meaning nothing sticks easily to the surface).
+              Long-lasting shine, making your car look new all the time.
+              Protection from UV rays that cause paint to fade. Resistance to
+              harsh weather conditions like rain and humidity.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Does Nano Ceramic Protect Against Deep Scratches?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Nano ceramic can protect your car from minor scratches and
+              everyday scuffs like door openings or flying sand. However, deeper
+              scratches or strong impacts require additional protection types.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Does Nano Ceramic Require Maintenance?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Yes, although it preserves the car for a long time, it's important
+              to wash the car properly to maintain the layer's effectiveness.
+              Simple maintenance every now and then will help keep the
+              protection strong for longer periods.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              How Long Does Nano Ceramic Last?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Nano ceramic can protect your car from minor scratches and
+              everyday scuffs like door openings or flying sand. However, deeper
+              scratches or strong impacts require additional protection types.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              Does Nano Ceramic Protect the Paint from Sun Fading?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Yes, the nano ceramic layer acts as a barrier against UV rays that
+              affect the paint and cause it to fade over time.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              What’s the Difference Between Nano Ceramic and Traditional Wax?
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Wax provides surface-level, temporary protection and needs
+              frequent reapplication. Nano ceramic, on the other hand,
+              penetrates the paint surface, offering stronger and longer-lasting
+              protection, as well as better shine and protection from external
+              factors.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              Do I Need an Expert to Apply Nano Ceramic?
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Yes, it’s best to have nano ceramic applied by professionals to
+              ensure proper application with the right layers for the desired
+              protection.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              Does Nano Ceramic Remove Existing Scratches?
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Nano ceramic doesn’t erase existing scratches, but it can cover
+              minor surface scratches. For deeper scratches, it's best to repair
+              them before applying nano ceramic.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTen"
+              aria-expanded="false"
+              aria-controls="collapseTen"
+            >
+              Can I Use Nano Ceramic on Glass or Headlights?
+            </button>
+          </h2>
+          <div
+            id="collapseTen"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Yes, nano ceramic is not limited to the car’s body; it can be
+              applied to glass and headlights to protect them from dust, water,
+              and ensure clear visibility.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>What Do Our Customers Say?</h3>
+          <p>Visit by the Actress Nermin Maher</p>
+
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/zKiIdQAY1x0')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid9.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+    </section>
+
+    <section class="form py-5">
+      <div class="row justify-content-center">
+        <div>
+          <form
+            [formGroup]="leadForm"
+            (ngSubmit)="onSubmit()"
+            class="shadow bg-white px-3 px-lg-4 py-5 rounded-4"
+          >
+            <h3 class="text-center mb-4">Request a Service</h3>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="full_name"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="tel"
+                formControlName="mobile"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="email"
+                formControlName="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="number"
+                formControlName="client_16849336084508"
+                placeholder="Car Models"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="client_16492512972331"
+                placeholder="Type Of Car"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="client_16858930300757"
+                placeholder="City"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="client_17293620987926"
+                placeholder="Service Type"
+              />
+            </div>
+            <p class="text-danger" *ngIf="notValid" [@fadeInOut]>
+              {{ notValid }}
+            </p>
+            <p class="text-success" *ngIf="valid" [@fadeInOut]>{{ valid }}</p>
+            <div class="text-right">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div></div>
+    </section>
+  </div>
+</main>
+
+<div class="my-sticky-btn shadow">
+  <button class="btn rounded-0 btn-secondary" (click)="scrollToForm()">
+    Book
+  </button>
+</div>

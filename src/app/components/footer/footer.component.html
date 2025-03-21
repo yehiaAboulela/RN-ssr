@@ -1,0 +1,316 @@
+@if (lang == 'en') {
+
+<footer class="py-5 bg-black text-white">
+  <div class="container-fluid">
+    <div class="logo-wrapper">
+      <a href="/" class="logo">
+        <img src="./logo.png" alt="royal nano" />
+      </a>
+      <div class="d-block d-lg-none">
+        <span class="footer-heading">Follow Us</span>
+
+        <ul class="list-unstyled social-links">
+          <li>
+            <a
+              href="https://www.facebook.com/RoyalNanoCeramic"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="./icons/facebook-logo.png"
+                alt="facebook"
+                class="w-100"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/royalnanoceramic"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="./icons/instagram-logo.png"
+                alt="instagram"
+                class="w-100"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@royalnanoceramic"
+              target="_blank"
+              class="social-link"
+            >
+              <img src="./icons/tik-tok.png" alt="tik-tok" class="w-100" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row g-3 row-gap-5">
+      <div class="col-lg-3 d-none d-lg-block">
+        <div>
+          <span class="footer-heading">Follow Us</span>
+
+          <ul class="list-unstyled social-links">
+            <li>
+              <a
+                href="https://www.facebook.com/RoyalNanoCeramic"
+                target="_blank"
+                class="social-link"
+              >
+                <img
+                  src="./icons/facebook-logo.png"
+                  alt="facebook"
+                  class="w-100"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/royalnanoceramic"
+                target="_blank"
+                class="social-link"
+              >
+                <img
+                  src="./icons/instagram-logo.png"
+                  alt="instagram"
+                  class="w-100"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@royalnanoceramic"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./icons/tik-tok.png" alt="tik-tok" class="w-100" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div>
+          <span class="footer-heading">Company</span>
+          <ul class="list-unstyled my-list">
+            <li>
+              <a routerLink="/about">About Us</a>
+            </li>
+            <li>
+              <a routerLink="/services">Services</a>
+            </li>
+            <li>
+              <a routerLink="/contact">Contact</a>
+            </li>
+            <li>
+              <a routerLink="/careers">Careers</a>
+            </li>
+            <li>
+              <a routerLink="/privacy-policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <div>
+          <span class="footer-heading">Branches</span>
+          <ul class="list-unstyled my-list">
+            <li><span>October</span></li>
+            <li><span>Nasr City</span></li>
+            <li><span>Mohandessin</span></li>
+            <li><span>Sheikh Zayed</span></li>
+            <li><span>Alexandria</span></li>
+            @if (allBranches) {
+            <li><span>Sohag</span></li>
+            <li><span>Hurghada</span></li>
+            <li><span>Tanta</span></li>
+            <li><span>Mansoura</span></li>
+            <li><span>Zagazig</span></li>
+            <li><span>Ismailia</span></li>
+            <li><span>Port Said</span></li>
+            <li><span>Suez</span></li>
+            <li><span>Minya</span></li>
+            <li><span>Assiut</span></li>
+            }
+
+            <li>
+              <span class="see-all" (click)="allBranches = !allBranches"
+                >See All</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div>
+          <span class="footer-heading">Reach out!</span>
+          <ul class="list-unstyled my-list">
+            <li>
+              <a href="tel:+201032222542">+20 103 2222 542</a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@royalnanoceramic.com"
+                >contact&#64;royalnanoceramic.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <!-- <p class="lead">
+          Hyer® HQ - Eindhoven, The Netherlands Registered on the Dutch Chamber
+          of Commerce: 80195520
+        </p> -->
+      </div>
+      <div class="col-lg-9">
+        <p class="lead">
+          Royal Nano Ceramic is a leading car protection company in Egypt,
+          offering advanced nano ceramic coatings to protect and enhance vehicle
+          exteriors. They specialize in paint protection, scratch resistance,
+          and hydrophobic coatings, ensuring cars remain in top condition.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+} @else {
+<footer class="py-5 bg-black text-white">
+  <div class="container-fluid">
+    <a href="/" class="logo">
+      <img src="./logo.png" alt="royal nano" />
+    </a>
+    <div class="row g-3 row-gap-5">
+      <div class="col-lg-3 col-sm-6">
+        <div>
+          <span class="footer-heading">تابعنا</span>
+
+          <ul class="list-unstyled social-links">
+            <li>
+              <a
+                href="https://www.facebook.com/RoyalNanoCeramic"
+                target="_blank"
+                class="social-link"
+              >
+                <img
+                  src="./icons/facebook-logo.png"
+                  alt="facebook"
+                  class="w-100"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/royalnanoceramic"
+                target="_blank"
+                class="social-link"
+              >
+                <img
+                  src="./icons/instagram-logo.png"
+                  alt="instagram"
+                  class="w-100"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@royalnanoceramic"
+                target="_blank"
+                class="social-link"
+              >
+                <img src="./icons/tik-tok.png" alt="tik-tok" class="w-100" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div>
+          <span class="footer-heading">الشركة</span>
+          <ul class="list-unstyled my-list">
+            <li>
+              <a routerLink="/about">من نحن</a>
+            </li>
+            <li>
+              <a routerLink="/services">الخدمات</a>
+            </li>
+            <li>
+              <a routerLink="/contact">اتصل بنا</a>
+            </li>
+            <li>
+              <a routerLink="/careers">وظائف</a>
+            </li>
+            <li>
+              <a routerLink="/privacy-policy">سياسة الخصوصية</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div>
+          <span class="footer-heading">تواصل معنا</span>
+          <ul class="list-unstyled my-list">
+            <li>
+              <a href="tel:+201032222542" dir="ltr">+20 103 2222 542</a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@royalnanoceramic.com"
+                >contact&#64;royalnanoceramic.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div>
+          <span class="footer-heading">الفروع</span>
+          <ul class="list-unstyled my-list">
+            <li><span>أكتوبر</span></li>
+            <li><span>مدينة نصر</span></li>
+            <li><span>المهندسين</span></li>
+            <li><span>الشيخ زايد</span></li>
+            <li><span>أسكندريه</span></li>
+            @if (allBranches) {
+            <li><span>سوهاج</span></li>
+            <li><span>الغردقة</span></li>
+            <li><span>طنطا</span></li>
+            <li><span>المنصورة</span></li>
+            <li><span>الزقازيق</span></li>
+            <li><span>الأسماعيليه</span></li>
+            <li><span>بورسعيد</span></li>
+            <li><span>السويس</span></li>
+            <li><span>المنيا</span></li>
+            <li><span>أسيوط</span></li>
+            }
+
+            <li>
+              <span class="see-all" (click)="allBranches = !allBranches"
+                >عرض المزيد</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <p class="lead">
+          المقر الرئيسي لشركة Hyer® - أيندهوفن، هولندا مسجلة في غرفة التجارة
+          الهولندية برقم: 80195520
+        </p>
+      </div>
+      <div class="col-lg-9">
+        <p class="lead">
+          شركة رويال نانو سيراميك هي شركة رائدة في مجال حماية السيارات في مصر،
+          تقدم حلول طلاء السيراميك المتقدمة لحماية وتعزيز مظهر السيارات. تتخصص
+          الشركة في حماية الطلاء، مقاومة الخدوش، والطلاءات الكارهة للماء، مما
+          يضمن بقاء السيارات في أفضل حالاتها.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+}

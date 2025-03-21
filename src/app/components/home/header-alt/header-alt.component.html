@@ -1,0 +1,28 @@
+<div class="video-background">
+  <video #bgVideo autoplay muted loop id="bg-video">
+    <source src="./imgs/bg-vid.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="content">
+    @if (lang == 'en') {
+    <h1 class="mb-4 d-block d-sm-none">
+      <span class="text-gold">Royal</span> <br />
+      <span class="sm-font">Nano Ceramic</span>
+    </h1>
+    <h1 class="mb-4 d-none d-sm-block">
+      <span class="text-gold">Royal</span> Nano Ceramic
+    </h1>
+    <a routerLink="/book-appointment" class="rounded-btn">Protect your car</a>
+    } @else {
+    <h1 class="mb-4 d-block d-sm-none">
+      <span class="text-gold">رويال</span> <br />
+      <span class="sm-font">نانو سيراميك</span>
+    </h1>
+    <h1 class="mb-4 d-none d-sm-block">
+      <span class="text-gold">رويال</span> نانو سيراميك
+    </h1>
+    <a routerLink="/book-appointment" class="rounded-btn">احم سيارتك</a>
+
+    }
+  </div>
+</div>

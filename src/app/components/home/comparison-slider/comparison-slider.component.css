@@ -1,0 +1,54 @@
+.second {
+  filter: blur(5px);
+}
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vw;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+}
+
+:host ::ng-deep .owl-theme .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+.lang-ar :host ::ng-deep .owl-theme .owl-nav {
+  right: auto;
+  left: 0;
+}
+:host ::ng-deep .owl-theme .owl-nav [class*="owl-"] {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(146, 76, 88);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #9e9e9e;
+  transition: 0.3s;
+}
+:host ::ng-deep .owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: black;
+}
+@media (max-width: 767.98px) {
+  .slider-wrapper {
+    height: 50vw;
+  }
+  :host ::ng-deep .owl-theme .owl-nav [class*="owl-"] {
+    width: 33px;
+    height: 33px;
+  }
+  :host ::ng-deep .owl-theme .owl-nav {
+    position: static;
+  }
+}
+img-comparison-slider {
+  width: 100%;
+}

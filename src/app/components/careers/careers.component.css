@@ -1,0 +1,85 @@
+.top {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #eee;
+}
+.text h1 {
+  max-width: 300px;
+}
+.text h3 {
+  max-width: 500px;
+}
+.form-sec {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  color: #333;
+}
+#applyFormParent .card {
+  padding: 40px;
+  border: none;
+  border-radius: 20px;
+}
+.form-sec h2 {
+  color: #343a40;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-sec .form-group {
+  margin-bottom: 25px;
+}
+
+.form-sec .form-group label {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-sec .form-control {
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form-sec .form-control:focus {
+  background-color: #fff;
+  border-color: #80bdff;
+  box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
+}
+
+.form-sec .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.form-sec .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.form-sec .btn-primary:disabled {
+  background-color: #b3c7e6;
+  border-color: #b3c7e6;
+  color: #6c757d;
+}
+@media (max-width: 575.98px) {
+  #applyFormParent .card {
+    padding-inline: 10px;
+  }
+}

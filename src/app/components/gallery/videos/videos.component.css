@@ -1,0 +1,26 @@
+.thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #cfcfcf;
+  position: relative;
+  cursor: pointer;
+}
+.thumbnail .thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+@media (max-width: 767.98px) {
+  .thumbnail {
+    height: 100px;
+  }
+  .thumbnail .play-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

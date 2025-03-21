@@ -1,0 +1,56 @@
+@if (lang === 'en') {
+<section>
+  <div class="container">
+    <div class="intro">
+      <div>
+        <span class="label"> {{ blog.label_en }} </span>
+      </div>
+      <h1 data-aos="fade-right">{{ blog.heading_en }}</h1>
+      <p data-aos="fade-left">
+        {{ blog.subHeading_en }}
+      </p>
+      <span class="date" data-aos="zoom-in"> {{ blog.date }} </span>
+    </div>
+    <div class="landscape-img" data-aos="zoom-in">
+      <img [src]="blog.img" alt="blog image" class="w-100" />
+    </div>
+
+    <div class="content">
+      @for (point of blog.points; track $index) {
+      <div class="point" data-aos="fade-left">
+        <h4>{{ point.head_en }}</h4>
+        <p>{{ point.body_en }}</p>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+} @else {
+<section>
+  <div class="container">
+    <div class="intro">
+      <div>
+        <span class="label"> {{ blog.label_ar }} </span>
+      </div>
+      <h1 data-aos="fade-right">{{ blog.heading_ar }}</h1>
+      <p data-aos="fade-left">
+        {{ blog.subHeading_ar }}
+      </p>
+      <span class="date" data-aos="zoom-in"> {{ blog.date }} </span>
+    </div>
+    <div class="landscape-img" data-aos="zoom-in">
+      <img [src]="blog.img" alt="blog image" class="w-100" />
+    </div>
+
+    <div class="content">
+      @for (point of blog.points; track $index) {
+      <div class="point" data-aos="fade-left">
+        <h4>{{ point.head_ar }}</h4>
+        <p>{{ point.body_ar }}</p>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+}

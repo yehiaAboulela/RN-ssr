@@ -1,0 +1,251 @@
+<section class="service-product">
+  <div class="container">
+    @if (lang == 'en') {
+    <h1 class="text-center" data-aos="zoom-in">Thermal isulation Products</h1>
+    } @else {
+    <h1 class="text-center" data-aos="zoom-in">منتجات العزل الحراري</h1>
+    }
+    <div class="divider my-4"></div>
+    <div data-aos="fade-up">
+      <owl-carousel-o [options]="customOptions" dir="ltr">
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">Shield Solar Guard</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 7 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">شيلد سولار جارد</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 7 سنة
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img src="./imgs/thermal1.jpg" alt="shiny car" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">Shield Ultra Cool</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 10 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">شيلد الترا كول</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 3 سنوات
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img src="./imgs/thermal2.jpg" alt="shiny car" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">3m crystalline</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Life expectancy:</span> 3 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">3m كرستالين</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">عمر افتراضي:</span> 3 سنوات
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img src="./imgs/thermal3.jpg" alt="shiny car" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">uv400 films</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Life expectancy:</span> 1 year
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">أفلام UV400</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">عمر افتراضي:</span> سنة
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img src="./imgs/thermal4.jpg" alt="shiny car" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+    <br />
+    <div class="divider"></div>
+    <section class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div
+          class="thumbnail"
+          (click)="openVideo('https://www.youtube.com/shorts/67KFUTXaO_k')"
+        >
+          <img
+            src="./imgs/thermalVid1.jpg"
+            alt="thumbnail"
+            class="thumbnail-img"
+          />
+          <img
+            src="./icons/play-circle.png"
+            alt="play icon"
+            class="play-icon"
+          />
+        </div>
+      </div>
+
+      <a
+        id="fancybox-trigger"
+        style="display: none"
+        href="https://www.youtube.com/embed/FUKmyRLOlAA"
+        data-fancybox
+      >
+        Open YouTube Video
+      </a>
+    </section>
+  </div>
+</section>

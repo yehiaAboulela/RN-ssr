@@ -1,0 +1,178 @@
+<section>
+  <div class="row">
+    <div class="col-lg-6">
+      <img-comparison-slider
+        direction="vertical"
+        value="70"
+        class="d-none d-lg-block"
+      >
+        <img
+          slot="first"
+          src="https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NDkyOTAxfHxlbnwwfHx8fHw%3D"
+          alt="Before"
+          class="header-img"
+        />
+        <img
+          slot="second"
+          src="https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NDkyOTAxfHxlbnwwfHx8fHw%3D"
+          alt="After"
+          class="header-img second"
+        />
+        <svg
+          slot="handle"
+          class="custom-animated-handle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          viewBox="-8 -3 16 6"
+        >
+          <path
+            stroke="#fff"
+            d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+            stroke-width="1"
+            fill="#fff"
+            vector-effect="non-scaling-stroke"
+          ></path>
+        </svg>
+      </img-comparison-slider>
+      <img-comparison-slider value="70" class="d-block d-lg-none">
+        <img
+          slot="first"
+          src="https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NDkyOTAxfHxlbnwwfHx8fHw%3D"
+          alt="Before"
+          class="header-img"
+        />
+        <img
+          slot="second"
+          src="https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NDkyOTAxfHxlbnwwfHx8fHw%3D"
+          alt="After"
+          class="header-img second"
+        />
+        <svg
+          slot="handle"
+          class="custom-animated-handle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          viewBox="-8 -3 16 6"
+        >
+          <path
+            stroke="#fff"
+            d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+            stroke-width="1"
+            fill="#fff"
+            vector-effect="non-scaling-stroke"
+          ></path>
+        </svg>
+      </img-comparison-slider>
+    </div>
+    @if (lang == 'en') {
+    <div class="col-lg-6 header-text">
+      <div class="ms-1 ms-lg-4">
+        <h2 class="why-royal">Why Royal Nano</h2>
+        <ul class="list-unstyled">
+          <li class="list-item" data-aos="fade-left">
+            <img src="./icons/bolt.png" alt="bolt" class="icon" />
+            <div>
+              <p>Fast and efficient solutions for your car needs.</p>
+              <p class="detils">
+                We provide cutting-edge technology that ensures speed and
+                reliability, helping your business stay ahead in a competitive
+                market.
+              </p>
+            </div>
+          </li>
+          <li class="list-item" data-aos="fade-left" data-aos-delay="100">
+            <img
+              src="./icons/torch-inspiration-leader.png"
+              alt="leadership"
+              class="icon"
+            />
+            <div>
+              <p>Innovative leadership that inspires progress and growth.</p>
+              <p class="detils">
+                Our forward-thinking leadership drives innovation, fostering a
+                culture of continuous improvement and development.
+              </p>
+            </div>
+          </li>
+          <li class="list-item" data-aos="fade-left" data-aos-delay="300">
+            <img src="./icons/user-headset.png" alt="support" class="icon" />
+            <div>
+              <p>24/7 customer support to assist you whenever needed.</p>
+              <p class="detils">
+                Our dedicated team is always available, providing expert
+                guidance and support to ensure your satisfaction around the
+                clock.
+              </p>
+            </div>
+          </li>
+          <li class="list-item" data-aos="fade-left" data-aos-delay="400">
+            <img src="./icons/wheat.png" alt="sustainability" class="icon" />
+            <div>
+              <p>Committed to sustainability and eco-friendly practices.</p>
+              <p class="detils">
+                We prioritize eco-conscious practices, ensuring our operations
+                are sustainable and contribute to a greener future.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    } @else {
+    <div class="col-lg-6 header-text">
+      <div class="ms-1 ms-lg-4">
+        <h2 class="why-royal">لماذا رويال نانو</h2>
+        <ul class="list-unstyled">
+          <li class="list-item" data-aos="fade-left">
+            <img src="./icons/bolt.png" alt="bolt" class="icon" />
+            <div>
+              <p>حلول سريعة وفعّالة لتلبية احتياجات سيارتك.</p>
+              <p class="detils">
+                نحن نوفر تقنيات متطورة تضمن السرعة والموثوقية، مما يساعد عملك
+                على البقاء في المقدمة في سوق تنافسي.
+              </p>
+            </div>
+          </li>
+          <li class="list-item" data-aos="fade-left" data-aos-delay="100">
+            <img
+              src="./icons/torch-inspiration-leader.png"
+              alt="leadership"
+              class="icon"
+            />
+            <div>
+              <p>قيادة مبتكرة تلهم التقدم والنمو.</p>
+              <p class="detils">
+                قيادتنا المتقدمة تحفّز الابتكار، وتُعزز ثقافة التحسين المستمر
+                والتطوير.
+              </p>
+            </div>
+          </li>
+          <li class="list-item" data-aos="fade-left" data-aos-delay="300">
+            <img src="./icons/user-headset.png" alt="support" class="icon" />
+            <div>
+              <p>
+                دعم عملاء متواصل على مدار الساعة لتلبية احتياجاتك في أي وقت.
+              </p>
+              <p class="detils">
+                فريقنا المخصص متواجد دائماً، لتقديم التوجيه والدعم الاحترافي
+                لضمان رضاك في كل الأوقات.
+              </p>
+            </div>
+          </li>
+          <li class="list-item" data-aos="fade-left" data-aos-delay="400">
+            <img src="./icons/wheat.png" alt="sustainability" class="icon" />
+            <div>
+              <p>ملتزمون بالاستدامة والممارسات الصديقة للبيئة.</p>
+              <p class="detils">
+                نحن نولي الأولوية للممارسات الواعية بالبيئة، لضمان أن تكون
+                عملياتنا مستدامة وتساهم في مستقبل أكثر اخضراراً.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    }
+  </div>
+</section>

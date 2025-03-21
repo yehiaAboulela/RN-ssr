@@ -1,0 +1,180 @@
+section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  direction: ltr !important;
+}
+.warranty-form {
+  max-width: 500px;
+  margin-inline: auto;
+}
+.warranty-form label {
+  margin-bottom: 5px;
+}
+:host ::ng-deep .calender {
+  width: 100%;
+}
+
+.warranty-form input,
+:host ::ng-deep input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 3px;
+  border: 1px solid rgb(119, 119, 188);
+  background-color: #eeeeee46;
+  transition: 0.3s;
+  /* height: 3rem; */
+}
+
+.warranty-form input:hover,
+:host ::ng-deep input:hover {
+  border-color: transparent;
+  background-color: #cfcfcf5d;
+}
+.warranty-form input:focus,
+:host ::ng-deep input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(106, 106, 166) !important;
+}
+
+.btn-form {
+  width: 100%;
+  padding: 14px;
+  border-radius: 3px;
+  border: 1px solid rgb(119, 119, 188);
+  background-color: #eeeeee46;
+  transition: 0.3s;
+}
+.btn-form:hover {
+  border-color: transparent;
+  background-color: #cfcfcf5d;
+}
+
+.input-parent {
+  margin-bottom: 40px;
+  position: relative;
+}
+::ng-deep .iti {
+  display: block;
+}
+.ownedByTab {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.38);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.my-card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+.my-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.my-card h3 span {
+  font-weight: 600;
+}
+.my-card h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.ownedByTab.active {
+  opacity: 1;
+  visibility: visible;
+}
+.ownedByTab.active .my-card {
+  transform: translateY(0);
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.313);
+  border: 3px solid white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.success .success-card {
+  background-color: white;
+  width: fit-content;
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  scale: 0;
+  transition: 0.5s;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.success .success-card .card-top {
+  background-image: url("https://www.pngarts.com/files/10/Confetti-PNG-Transparent-Image.png");
+  background-position: top;
+  background-size: cover;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+.success .success-card .card-top img {
+  width: 100px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.352));
+}
+.success .success-card .card-body {
+  padding: 20px;
+}
+.success.active {
+  visibility: visible;
+  opacity: 1;
+}
+.success.active .success-card {
+  scale: 1;
+}
+
+.vlidationMessage {
+  position: absolute;
+  bottom: -44px;
+  left: 5px;
+  font-weight: 500;
+  color: #ff0000;
+  transform: translateY(20px);
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.vlidationMessage.active {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-width: 850px) {
+  .logo-top-left,
+  .logo-bottom-right {
+    width: 500px;
+  }
+  .vlidationMessage {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .success .success-card {
+    width: 95%;
+  }
+}

@@ -1,0 +1,92 @@
+.section {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+.policy-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: all 0.3s;
+}
+
+.policy-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.policy-card h2 {
+  font-size: 1.75rem;
+  color: #444;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.policy-card p,
+.policy-card ul {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.policy-card ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
+.policy-card ul li {
+  padding-inline-start: 1.5rem;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.policy-card ul li:before {
+  content: "\f00c"; /* Font Awesome checkmark */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-section ul li {
+  margin-bottom: 5px;
+}
+
+.contact-section ul li strong {
+  color: #444;
+}
+
+.fas {
+  color: #d4af37;
+  margin-inline-end: 10px;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .policy-card {
+    padding: 20px;
+  }
+
+  .policy-card h2 {
+    font-size: 1.5rem;
+  }
+}

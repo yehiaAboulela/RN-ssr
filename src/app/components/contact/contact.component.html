@@ -1,0 +1,132 @@
+<section class="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-1 order-lg-0" data-aos="fade-right">
+        @if(lang === 'en'){
+        <div>
+          <p class="fw-bold text-black-50">How can we help you?</p>
+          <h1>Contact us</h1>
+          <p class="mb-4 text-black-50">
+            We’re here to help and answer any questions you might have. We look
+            forward to hearing from you!
+          </p>
+          <ul class="list-unstyled header-list">
+            <li>
+              <i class="fa fa-phone me-4"></i>
+              <span>+20 103 2222 542 </span>
+            </li>
+            <li>
+              <i class="fa fa-message me-4"></i>
+              <a href="mailto:contact@royalnanoceramic.com" class="text-black"
+                >contact&#64;royalnanoceramic.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        } @else {
+        <div>
+          <p class="fw-bold text-black-50">كيف يمكننا مساعدتك؟</p>
+          <h1>اتصل بنا</h1>
+          <p class="mb-4 text-black-50">
+            نحن هنا لمساعدتك والإجابة على أي أسئلة قد تكون لديك. نتطلع إلى سماع
+            أخبارك!
+          </p>
+          <ul class="list-unstyled header-list">
+            <li>
+              <i class="fa fa-phone ms-4"></i>
+              <span dir="ltr">+20 103 2222 542 </span>
+            </li>
+            <li>
+              <i class="fa fa-message ms-4"></i>
+              <a href="mailto:contact@royalnanoceramic.com" class="text-black"
+                >contact&#64;royalnanoceramic.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        }
+      </div>
+      <div class="col-lg-6 text-center p-md-5" data-aos="fade-left">
+        <img
+          src="https://sleeknotecom.wpenginepowered.com/wp-content/uploads/2023/11/image-4-2048x2048.png"
+          alt="person holding phone"
+          class="w-100"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="locations">
+  <div class="container-fluid">
+    <div class="row g-0">
+      <div class="col-lg-6 order-1 order-lg-0">
+        <div class="locations-list">
+          @if (lang == 'en') {
+          <ul class="list-unstyled">
+            <li>
+              <p (click)="changeLocation('tanta')">tanta</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('october')">october</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('madenetNasr')">madenetNasr</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('zayed')">zayed</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('madenetNasr2')">madenetNasr2</p>
+            </li>
+
+            <li><p>Mohandessin</p></li>
+            <li><p>Alexandria</p></li>
+            <li><p>Sohag</p></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><p>Hurghada</p></li>
+            <li><p>Mansoura</p></li>
+            <li><p>Zagazig</p></li>
+            <li><p>Ismailia</p></li>
+            <li><p>Port Said</p></li>
+            <li><p>Suez</p></li>
+            <li><p>Minya</p></li>
+            <li><p>Assiut</p></li>
+          </ul>
+          } @else {
+          <ul class="list-unstyled">
+            <li>
+              <p (click)="changeLocation('tanta')">طنطا</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('october')">6 أكتوبر</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('madenetNasr')">مدينة نصر</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('zayed')">زايد</p>
+            </li>
+            <li>
+              <p (click)="changeLocation('madenetNasr2')">مدينة نصر 2</p>
+            </li>
+          </ul>
+
+          }
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <iframe
+          [src]="curLocation | safe"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>

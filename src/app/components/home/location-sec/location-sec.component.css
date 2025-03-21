@@ -1,0 +1,112 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section .location,
+section .text {
+  width: 50%;
+  height: 55vw;
+}
+
+section .location {
+  background-color: #0f0f1c;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+section .text {
+  background-color: #151623;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+section .text h4 {
+  font-size: 3rem;
+}
+section .text ul {
+  margin-top: 20px;
+}
+section .text ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+section .text p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  section .text h4 {
+    font-size: 2.4rem;
+  }
+  section .text ul {
+    margin-top: 20px;
+  }
+  section .text ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  section .text p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section .text h4 {
+    font-size: 2rem;
+  }
+  section .text ul {
+    margin-top: 10px;
+  }
+  section .text ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  section .text p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 902px) {
+  section .location,
+  section .text {
+    width: 100%;
+    height: auto;
+  }
+  section .text h4 {
+    font-size: 2rem;
+  }
+  section .text ul {
+    margin-top: 10px;
+  }
+  section .text ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  section .text p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 502px) {
+  section .text h4 {
+    font-size: 1.4rem;
+  }
+  section .text ul {
+    margin-top: 10px;
+  }
+  section .text ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  section .text p {
+    font-size: 14px;
+  }
+}

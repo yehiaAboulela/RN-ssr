@@ -1,0 +1,646 @@
+<main dir="rtl">
+  <header>
+    <div class="intro">
+      <h1>احمي عربيتك مع أقوى حماية نانو سيراميك في السوق</h1>
+      <p>
+        بنقدم لك تكنولوجيا حماية متقدمة بتضمن لعربيتك اقوي مقاومة من الخدوش
+        والعوامل الجوية، وتديها لمعان يدوم لسنين طويلة! استثمر في عربيتك
+        النهارده واستمتع براحة البال وإطلالة جديدة كل يوم
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>احجز موعدك الآن</h3>
+          <p>واحصل علي اقوي ضمان</p>
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/U1y1RiqBsT8')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid6.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+    </section>
+
+    <section class="befor-after">
+      <app-comparison-slider></app-comparison-slider>
+    </section>
+
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>ماذا يقول عملاؤنا؟</h3>
+          <p>زيارة الفنانة ايناس النجار</p>
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/SvCTtUpAs2M')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid7.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+
+      <h4 class="mt-4 text-center">اسأل عن البروموكود واحصل علي خصم خاص</h4>
+    </section>
+
+    <section class="testimonials">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              انا منفذ من سنه والحمد لله العربيه اجمل من لما استلمتها من المعرض
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client1.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>فرج لويس</h4>
+                <span class="text-black-50 fw-bold me-2">مدينة نصر</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              من 3 سنين صحابي بيرشحولي المكان وبصراحه لما جيت انبهرت بالعربيه
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client2.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>ياسمين</h4>
+                <span class="text-black-50 fw-bold me-2">اكتوبر</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">عربيتي زيرو بس جيت استلمتها احلا من الزيرو</p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client3.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>نانسي</h4>
+                <span class="text-black-50 fw-bold me-2">مدينة نصر</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              انا من سنة 2021 وعربيتي باللمعه والجمال ال كلنا بنحب نشوف عربياتنا
+              بيه
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client4.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>احمد عيطة</h4>
+                <span class="text-black-50 fw-bold me-2">اكتوبر</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">الناس دي عمرها ما خيبت ظني ابداً</p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client5.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>علي</h4>
+                <span class="text-black-50 fw-bold me-2">المكان</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              متابعاكو من سنه وكنت خايفه اخد قرار بس لما خدت القرار واختارت
+              رويال نانو مندمتش انا بجد منبهره بعربيتي
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client6.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>ناديه</h4>
+                <span class="text-black-50 fw-bold me-2">اكتوبر</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              شوفت فيديوهات كتيره ورفيوهات كتيره بس مكنتش متوقع اشوف الجمال ده
+              علي ارض الواقع
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client7.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>عبدالله</h4>
+                <span class="text-black-50 fw-bold me-2">المكان</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="lead">
+              انا النهارده عملت الصيانه بعد 6 شهور انا مبسوط ان في فمصر شركه
+              بالتميز ده في خدمه ما بعد البيع انا بنصح اي حد في مصر عاوز يعمل
+              حمايه يكلم رويال نانو سيراميك
+            </p>
+            <div class="client">
+              <div class="client-img">
+                <img src="imgs/client8.jpg" alt="عميل" />
+              </div>
+              <div class="client-name">
+                <h4>يحيى</h4>
+                <span class="text-black-50 fw-bold me-2">المكان</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </section>
+
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>ماذا يقول عملاؤنا؟</h3>
+          <p>زيارة الفنان محمود حافظ</p>
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/KwzZ--X9pvs')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid8.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              ⁠إيه هو النانو سيراميك؟
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              النانو سيراميك هو طبقة حماية متطورة بتتطبق على سطح العربية لتكوين
+              درع واقي ضد الخدوش، الأوساخ، والأتربة، وبيحافظ على لمعان السيارة
+              لفترة طويلة. التكنولوجيا دي بتتكون من جزيئات نانوية بتخترق سطح
+              الطلاء وبتعمل على تقويته.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              ⁠إيه مميزات النانو سيراميك؟
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              حماية ضد الخدوش والاحتكاكات البسيطة. مقاومة الأوساخ، الأتربة،
+              والمياه (يعني مفيش حاجة بتلزق بسهولة على السطح). لمعان مستمر يخلي
+              عربيتك تبان جديدة طول الوقت. حماية ضد الأشعة فوق البنفسجية اللي
+              بتسبب بهتان الطلاء. مقاومة للعوامل الجوية القاسية زي الأمطار
+              والرطوبة.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              ⁠هل النانو سيراميك بيحمي من الخدوش الكبيرة؟
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              النانو سيراميك بيقدر يحمي عربيتك من الخدوش البسيطة والاحتكاكات
+              اليومية زي فتح الأبواب أو الرمال المتطايرة. لكن الخدوش العميقة أو
+              الصدمات القوية محتاجة أنواع حماية إضافية.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsefour"
+              aria-expanded="false"
+              aria-controls="collapsefour"
+            >
+              هل النانو سيراميك بيحتاج صيانة؟
+            </button>
+          </h2>
+          <div
+            id="collapsefour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              أيوة، مع إنه بيحافظ على العربية لمدة طويلة، لكن لازم تهتم بغسيل
+              العربية بطرق مناسبة عشان تحافظ على فعالية الطبقة. صيانة بسيطة كل
+              فترة هتساعد في بقاء الحماية أقوى لفترات أطول.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsefive"
+              aria-expanded="false"
+              aria-controls="collapsefive"
+            >
+              ⁠هل النانو سيراميك بيحتاج صيانة؟
+            </button>
+          </h2>
+          <div
+            id="collapsefive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              أيوة، مع إنه بيحافظ على العربية لمدة طويلة، لكن لازم تهتم بغسيل
+              العربية بطرق مناسبة عشان تحافظ على فعالية الطبقة. صيانة بسيطة كل
+              فترة هتساعد في بقاء الحماية أقوى لفترات أطول.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              النانو سيراميك بيعيش قد إيه؟
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              النانو سيراميك بيقدر يحمي عربيتك من الخدوش البسيطة والاحتكاكات
+              اليومية زي فتح الأبواب أو الرمال المتطايرة. لكن الخدوش العميقة أو
+              الصدمات القوية محتاجة أنواع حماية إضافية.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              هل النانو سيراميك بيحمي الطلاء من بهتان الشمس؟
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              أيوة، طبقة النانو سيراميك بتعمل كحاجز ضد الأشعة فوق البنفسجية اللي
+              بتأثر على الطلاء وبتتسبب في بهتانه بمرور الوقت.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              إيه الفرق بين النانو سيراميك والشمع التقليدي؟
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              الشمع بيقدم حماية سطحية ومؤقتة، وبيحتاج يتجدد بشكل متكرر. أما
+              النانو سيراميك فهو بيخترق سطح الطلاء، بيعمل كطبقة حماية أقوى
+              وبتدوم لفترة أطول، وبيقدم لمعان أكبر وحماية أفضل ضد العوامل
+              الخارجية.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              ⁠هل لازم أروح لخبير عشان يطبق لي النانو سيراميك؟
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              أيوة، من الأفضل تطبق النانو سيراميك عند متخصصين محترفين عشان
+              التأكد من إن التطبيق تم بشكل صحيح وعلى طبقات مظبوطة تضمن الحماية
+              المطلوبة.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTen"
+              aria-expanded="false"
+              aria-controls="collapseTen"
+            >
+              هل النانو سيراميك بيشيل الخدوش الموجودة بالفعل؟
+            </button>
+          </h2>
+          <div
+            id="collapseTen"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              النانو سيراميك مش بيمسح الخدوش الموجودة، لكن ممكن يغطي الخدوش
+              السطحية البسيطة. لو فيه خدوش عميقة، الأفضل إصلاحها قبل تطبيق
+              النانو سيراميك.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEleven"
+              aria-expanded="false"
+              aria-controls="collapseEleven"
+            >
+              هل ممكن أستخدم النانو سيراميك على الزجاج أو الفوانيس؟
+            </button>
+          </h2>
+          <div
+            id="collapseEleven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              أيوة، النانو سيراميك مش مقتصر على جسم العربية بس، ممكن تطبيقه على
+              الزجاج والفوانيس لحمايتهم من الأتربة والمياه وضمان وضوح الرؤية.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="vid-card">
+        <div class="video-content">
+          <h3>ماذا يقول عملاؤنا؟</h3>
+          <p>زيارة الفنانة نرمين ماهر</p>
+          <div
+            class="play-icon"
+            (click)="openVideo('https://youtu.be/zKiIdQAY1x0')"
+          >
+            <img src="./icons/play2.png" alt="" />
+          </div>
+        </div>
+        <img src="./imgs/vid9.png" alt="thumbnail" class="thumbnail-img" />
+      </div>
+    </section>
+
+    <section class="form py-5">
+      <div class="row justify-content-center">
+        <div>
+          <form
+            [formGroup]="leadForm"
+            (ngSubmit)="onSubmit()"
+            class="shadow bg-white px-3 px-lg-4 py-5 rounded-4"
+          >
+            <h3 class="text-center mb-4">Request a Service</h3>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="full_name"
+                placeholder="الأسم"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="mobile"
+                placeholder="رقم التليفون"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="email"
+                formControlName="email"
+                placeholder="البريد الإلكترونى"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="number"
+                formControlName="client_16849336084508"
+                placeholder="Car models"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="client_16492512972331"
+                placeholder="Type Of Car"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="client_16858930300757"
+                placeholder="المدينة"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control my-3"
+                type="text"
+                formControlName="client_17293620987926"
+                placeholder="نوع الخدمه"
+              />
+            </div>
+            <p class="text-danger" *ngIf="notValid">{{ notValid }}</p>
+            <p class="text-success" *ngIf="valid">{{ valid }}</p>
+            <div class="text-right">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<div class="my-sticky-btn shadow">
+  <button class="btn rounded-0 btn-secondary" (click)="scrollToForm()">
+    سارع للحجز
+  </button>
+</div>

@@ -1,0 +1,94 @@
+<div class="bg">
+  <header>
+    <img src="/logo.png" alt="" class="logo-trns" />
+    <div class="container-fluid">
+      <h1 class="back">Gallery</h1>
+      <div class="my-carousel">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide>
+            <div class="my-img">
+              <img
+                src="./imgs/gallryTop1.jpeg"
+                class="slider-img"
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="my-img">
+              <img
+                src="./imgs/gallryTop2.jpeg"
+                class="slider-img"
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="my-img">
+              <img
+                src="./imgs/gallryTop3.jpeg"
+                class="slider-img"
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="my-img">
+              <img
+                src="./imgs/gallryTop4.jpeg"
+                class="slider-img"
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="my-img">
+              <img
+                src="./imgs/gallryTop5.jpeg"
+                class="slider-img"
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="my-img">
+              <img
+                src="./imgs/gallryTop6.jpeg"
+                class="slider-img"
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid fluid mt-3">
+    <h2 class="fw-medium mb-3 text-center">
+      @if (lang == 'en') { Latest Shots } @else {اخر لقطات}
+    </h2>
+    <nav class="mb-3">
+      @if (lang == 'en') {
+      <button class="filter-btn" (click)="images = true">Images</button>
+      <button class="filter-btn" (click)="images = false">Videos</button> }
+      @else {
+
+      <button class="filter-btn" (click)="images = true">صور</button>
+      <button class="filter-btn" (click)="images = false">فيديوهات</button>
+      }
+    </nav>
+
+    @if (images) {
+    <app-images></app-images>
+    } @else {
+    <app-videos></app-videos>
+    }
+  </div>
+</div>

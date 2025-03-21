@@ -1,0 +1,8 @@
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards .my-card {
+  width: 48%;
+}

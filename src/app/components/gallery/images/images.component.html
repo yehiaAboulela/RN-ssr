@@ -1,0 +1,7 @@
+<main class="gallery-body py-3">
+  @for (img of images; track $index) {
+  <div class="img-card" (click)="openImage(img.id)">
+    <img [src]="img.imgs[0]" alt="car" loading="lazy" />
+  </div>
+  }
+</main>

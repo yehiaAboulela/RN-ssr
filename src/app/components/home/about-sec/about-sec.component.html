@@ -1,0 +1,53 @@
+@if (lang == 'en') {
+<section class="pb-5">
+  <div class="sepparator d-block d-lg-none"></div>
+  <div class="cards">
+    <div class="my-card a">
+      <h2 data-aos="fade-down">Flexible Services</h2>
+
+      <div data-aos="fade-down">
+        <p>Smart solutions for all your charter requirements</p>
+        <a routerLink="/services" class="rounded-btn">All Solutions</a>
+      </div>
+    </div>
+    <a routerLink="/about" class="my-card b">
+      <h2 data-aos="fade-down">Your reliable Partners</h2>
+      <a routerLink="/about" class="hidden-link"
+        ><span>About us</span> <i class="fa-solid fa-arrow-right"></i
+      ></a>
+    </a>
+    <a routerLink="/services" class="my-card c">
+      <h2 data-aos="fade-down">Always There to help you</h2>
+      <a routerLink="/Contact" class="hidden-link"
+        ><span>Contact Us</span> <i class="fa-solid fa-arrow-right"></i
+      ></a>
+    </a>
+  </div>
+</section>
+} @else if (lang == 'ar') {
+<section class="py-5">
+  <div class="cards">
+    <div class="my-card a">
+      <h2 data-aos="fade-down">خدمات مرنة</h2>
+
+      <div data-aos="fade-down">
+        <p>حلول ذكية لجميع احتياجاتك</p>
+        <a routerLink="/services" class="rounded-btn">جميع الحلول</a>
+      </div>
+    </div>
+    <a routerLink="/about" class="my-card b">
+      <h2 data-aos="fade-down">شركاؤك الموثوقون</h2>
+      <a routerLink="/about" class="hidden-link">
+        <span>عنّا</span> <i class="fa-solid fa-arrow-left"></i>
+      </a>
+    </a>
+    <a routerLink="/services" class="my-card c">
+      <h2 data-aos="fade-down">دائمًا هنا لمساعدتك</h2>
+      <a routerLink="/Contact" class="hidden-link">
+        <span>اتصل بنا</span> <i class="fa-solid fa-arrow-left"></i>
+      </a>
+    </a>
+  </div>
+</section>
+
+}

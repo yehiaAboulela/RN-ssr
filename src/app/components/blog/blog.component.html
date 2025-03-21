@@ -1,0 +1,66 @@
+<section>
+  <div class="container-fluid">
+    @if (lang == 'en') {
+    <div class="intro">
+      <h1 data-aos="fade-right">The latest and greatest from our team</h1>
+      <p data-aos="fade-left">
+        Stay up-to-date with the latest from our team. Including tips and
+        tricks, important announcements, and product updates.
+      </p>
+    </div>
+    } @else {
+    <div class="intro">
+      <h1 data-aos="fade-right">أحدث وأفضل ما قدمته فريقنا</h1>
+      <p data-aos="fade-left">
+        تابع أحدث الأخبار من فريقنا. بما في ذلك النصائح والحيل، والإعلانات
+        الهامة، وتحديثات المنتجات.
+      </p>
+    </div>
+
+    }
+
+    <div class="blogs pb-5">
+      @if (lang === 'en') {
+      <div class="row g-1">
+        @for (blog of blogs; track $index) {
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+          <a [routerLink]="[blog._id]" class="blog-card">
+            <div class="blog-img">
+              <img [src]="blog.img" alt="blog image" class="w-100" />
+            </div>
+
+            <div class="label">
+              <span> {{ blog.label_en }} </span>
+            </div>
+
+            <h3 class="text-black h4">{{ blog.heading_en }}</h3>
+
+            <h4 class="fs-6 text-black-50">{{ blog.subHeading_en }}</h4>
+          </a>
+        </div>
+        }
+      </div>
+      } @else {
+      <div class="row g-1">
+        @for (blog of blogs; track $index) {
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+          <a [routerLink]="[blog._id]" class="blog-card">
+            <div class="blog-img">
+              <img [src]="blog.img" alt="blog image" class="w-100" />
+            </div>
+
+            <div class="label">
+              <span> {{ blog.label_ar }} </span>
+            </div>
+
+            <h3 class="text-black h4">{{ blog.heading_ar }}</h3>
+
+            <h4 class="fs-6 text-black-50">{{ blog.subHeading_ar }}</h4>
+          </a>
+        </div>
+        }
+      </div>
+      }
+    </div>
+  </div>
+</section>

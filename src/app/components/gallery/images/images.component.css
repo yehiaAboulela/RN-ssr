@@ -1,0 +1,46 @@
+.gallery-body {
+  columns: 3;
+  gap: 10px;
+}
+.gallery-body .img-card {
+  margin-bottom: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+.gallery-body .img-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  z-index: 33;
+}
+.gallery-body .img-card img {
+  width: 100%;
+}
+.fluid {
+  max-width: 1500px;
+}
+@media screen and (max-width: 940px) {
+  header h1 {
+    transform: translate(-50%, -200%);
+  }
+}
+@media screen and (max-width: 740px) {
+  .my-carousel h1 {
+    font-size: 4.3rem;
+  }
+  header {
+    height: 100vh;
+    position: relative;
+    padding-top: 80px;
+  }
+  .back {
+    z-index: 5;
+  }
+
+  .gallery-body {
+    gap: 3px;
+  }
+  .gallery-body .img-card {
+    margin-bottom: 3px;
+  }
+}

@@ -1,0 +1,58 @@
+<section class="mt-5">
+  <owl-carousel-o [options]="customOptions" dir="ltr">
+    <ng-template carouselSlide>
+      <div class="slider-wrapper">
+        <img-comparison-slider>
+          <img
+            slot="first"
+            src="./imgs/beforeAfterb3.jpeg"
+            alt="Before"
+            class="w-100"
+          />
+          <img
+            slot="second"
+            src="./imgs/beforeAftera3.jpeg"
+            alt="After"
+            class="w-100"
+          />
+        </img-comparison-slider>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="slider-wrapper">
+        <img-comparison-slider>
+          <img
+            slot="first"
+            src="./imgs/beforeAfterb2.jpeg"
+            alt="Before"
+            class="w-100"
+          />
+          <img
+            slot="second"
+            src="./imgs/beforeAftera2.jpeg"
+            alt="After"
+            class="w-100"
+          />
+        </img-comparison-slider>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="slider-wrapper">
+        <img-comparison-slider>
+          <img
+            slot="first"
+            src="./imgs/beforeAfterb1.jpeg"
+            alt="Before"
+            class="w-100"
+          />
+          <img
+            slot="second"
+            src="./imgs/beforeAftera1.jpeg"
+            alt="After"
+            class="w-100"
+          />
+        </img-comparison-slider>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</section>

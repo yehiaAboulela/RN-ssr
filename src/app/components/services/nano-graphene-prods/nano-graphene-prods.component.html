@@ -1,0 +1,574 @@
+<section class="service-product">
+  <div class="container">
+    @if (lang == 'en') {
+    <h1 class="text-center" data-aos="zoom-in">Nano graphene products</h1>
+    } @else {
+    <h1 class="text-center" data-aos="zoom-in">منتجات النانو جرافين</h1>
+    }
+    <div class="divider my-4"></div>
+    <div data-aos="fade-up">
+      <owl-carousel-o [options]="customOptions" dir="ltr">
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">Graphene Hybrid Plus</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 12 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Hardness:</span> 10h+
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Elements:</span> 98% carbon fiber
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">جيرافين هايبرد بلس</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 12 سنة
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الصلابة:</span> 10h+
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">العناصر:</span> 98% ألياف كربونية
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="one-image">
+                <div class="img-wrapper">
+                  <img
+                    src="./imgs/graphene.jpeg"
+                    alt="shiny car"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">Graphene Hybrid</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 10 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Hardness:</span> 9H+
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Elements:</span> 85% carbon fiber
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">دايموند هايبرد</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 10 سنوات
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الصلابة:</span> 9H+
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">العناصر:</span> 85% ألياف كربونية
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img
+                  src="./imgs/graphene2.jpeg"
+                  alt="shiny car"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <!-- <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">Hard Graphene Pro</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 10 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Hardness:</span> 9H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Elements:</span> 70% carbon fiber
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span>
+                    Germany
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">هارد جيرافين برو</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 10 سنوات
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الصلابة:</span> 9H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">العناصر:</span> 70% ألياف كربونية
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> ألمانيا
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img
+                  src="./imgs/graphene3.jpeg"
+                  alt="shiny car"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </ng-template> -->
+
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h2 class="mb-3">Graphene Pro</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 10 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Hardness:</span> 9H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Elements:</span> 70% carbon fiber
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span>
+                    Germany
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h2 class="mb-3">هارد جيرافين برو</h2>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 10 سنوات
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الصلابة:</span> 9H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">العناصر:</span> 70% ألياف كربونية
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> ألمانيا
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img
+                  src="./imgs/graphene4.jpeg"
+                  alt="shiny car"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h1>Graphene pro</h1>
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 10 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Hardness:</span> 8H+
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Elements:</span> 65% carbon fiber
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h1>جرافين برو</h1>
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 10 سنوات
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الصلابة:</span> 8H+
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">العناصر:</span> 65% ألياف كربونية
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img
+                  src="./imgs/graphene5.jpeg"
+                  alt="shiny car"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h1>Adms graphene</h1>
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 10 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Hardness:</span> 8H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Elements:</span> 65% carbon fiber
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span> USA
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h1>أدمينز جرافين</h1>
+
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 10 سنوات
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الصلابة:</span> 8H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">العناصر:</span> 65% ألياف كربونية
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> الولايات المتحدة
+                    الأمريكية
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img
+                  src="./imgs/graphene6.jpeg"
+                  alt="shiny car"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="row g-3 align-items-center product-details">
+            <a routerLink="/book-appointment" class="overlay">
+              <h4>Book Now</h4>
+            </a>
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="p-lg-3">
+                @if (lang === "en") {
+                <h1>Graphene nanolex</h1>
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Warranty:</span> 12 years
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Hardness:</span> 8H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Elements:</span> 65% carbon fiber
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">Country of manufacture:</span>
+                    Germany
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >Book Now</a
+                >
+                } @else {
+                <h1>جرافين نانو ليكس</h1>
+                <ul class="list-unstyled lead">
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الضمان:</span> 12 سنة
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">الصلابة:</span> 8H
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">العناصر:</span> 65% ألياف كربونية
+                  </li>
+                  <li class="mb-2 ms-2">
+                    <span class="fw-medium">بلد الصنع:</span> ألمانيا
+                  </li>
+                </ul>
+                <a
+                  routerLink="/book-appointment"
+                  class="btn btn-outline-dark d-block d-lg-none mb-3"
+                  >احجز الآن</a
+                >
+                }
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="img-wrapper">
+                <img
+                  src="./imgs/graphene7.jpeg"
+                  alt="shiny car"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+    <br />
+    <div class="divider"></div>
+    <section class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div
+          class="thumbnail"
+          (click)="
+            openVideo(
+              'https://www.youtube.com/watch?v=kV6Q6eUEsbU&ab_channel=RoyalNanoCeramic'
+            )
+          "
+        >
+          <img
+            src="./imgs/grapheneVid1.jpg"
+            alt="thumbnail"
+            class="thumbnail-img"
+          />
+          <img
+            src="./icons/play-circle.png"
+            alt="play icon"
+            class="play-icon"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div
+          class="thumbnail"
+          (click)="openVideo('https://youtu.be/KwzZ--X9pvs')"
+        >
+          <img src="./imgs/vid8.png" alt="thumbnail" class="thumbnail-img" />
+          <img
+            src="./icons/play-circle.png"
+            alt="play icon"
+            class="play-icon"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div
+          class="thumbnail"
+          (click)="openVideo('https://www.youtube.com/shorts/9bwZpzqUnkQ')"
+        >
+          <img
+            src="./imgs/grapheneVid3.jpg"
+            alt="thumbnail"
+            class="thumbnail-img"
+          />
+          <img
+            src="./icons/play-circle.png"
+            alt="play icon"
+            class="play-icon"
+          />
+        </div>
+      </div>
+      <a
+        id="fancybox-trigger"
+        style="display: none"
+        href="https://www.youtube.com/embed/FUKmyRLOlAA"
+        data-fancybox
+      >
+        Open YouTube Video
+      </a>
+    </section>
+    <section class="mt-5">
+      @if(lang == 'en'){
+      <div class="my-5 pt-3 mb-3">
+        <h4 class="h2">See the Difference</h4>
+      </div>
+      } @else {
+      <h4 class="my-5 pt-3 mb-5">اكتشف الفرق بنفسك</h4>
+      }
+      <div data-aos="fade-left">
+        <div class="slider-wrapper">
+          <img-comparison-slider>
+            <img
+              slot="first"
+              src="./imgs/beforeAfterb2.jpeg"
+              alt="Before"
+              class="w-100"
+            />
+            <img
+              slot="second"
+              src="./imgs/beforeAftera2.jpeg"
+              alt="After"
+              class="w-100"
+            />
+          </img-comparison-slider>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

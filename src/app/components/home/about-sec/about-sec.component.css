@@ -1,0 +1,99 @@
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards .my-card {
+  width: calc(100% / 3);
+  height: 53vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-decoration: none;
+}
+
+.sepparator {
+  height: 20px;
+  background-image: linear-gradient(to bottom, transparent, #151623);
+}
+.cards .my-card.a {
+  background-color: #151623;
+  justify-content: space-between;
+}
+.cards .my-card.a h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.cards .my-card.a p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.cards .my-card.b {
+  background-image: url("https://images.pexels.com/photos/3849553/pexels-photo-3849553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-position: center;
+  background-size: cover;
+  justify-content: end;
+}
+.cards .my-card.c {
+  background-color: #bc7154;
+  justify-content: end;
+}
+.cards .my-card .hidden-link {
+  font-size: 1.3rem;
+  text-decoration: none !important;
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+}
+.cards .my-card .hidden-link i {
+  padding-inline-start: 7px;
+}
+.cards .my-card.b h2,
+.cards .my-card.c h2 {
+  font-size: 1.6rem;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+.cards .my-card.b:hover h2,
+.cards .my-card.c:hover h2 {
+  transform: translateY(0);
+}
+.cards .my-card.b:hover .hidden-link,
+.cards .my-card.c:hover .hidden-link {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1090px) {
+  .cards .my-card.a h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .cards .my-card.a p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .cards .my-card {
+    width: 100%;
+  }
+  .cards .my-card.a h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .cards .my-card.a p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .cards .my-card {
+    width: 100%;
+    height: 90vw;
+  }
+  .cards .my-card.a {
+    padding-top: 0;
+  }
+}

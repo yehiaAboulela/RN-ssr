@@ -1,0 +1,150 @@
+header {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-image: url(/imgs/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  max-width: 550px;
+}
+.my-header-cols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: move 30s linear infinite;
+}
+.my-header-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 48%;
+}
+.my-header-col.one {
+  margin-top: 150px;
+}
+.my-card {
+  height: 380px;
+  width: 100%;
+  position: relative;
+  border: 0.5px solid rgb(208, 208, 208);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.587);
+  margin-bottom: 20px;
+}
+.my-card .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+.my-card .numbers {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .my-card {
+    height: 250px;
+  }
+  .my-card h3,
+  .my-card h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .my-header-cols {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .my-header-col {
+    width: fit-content;
+    align-items: end;
+  }
+  .my-card {
+    height: 250px;
+    width: 200px;
+  }
+  header {
+    /* min-height: 100vh; */
+    height: auto;
+    padding-block: 88px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    border-radius: 10px;
+  }
+  .my-header-cols {
+    animation: none;
+  }
+  .my-header-col {
+    flex-direction: row;
+    width: fit-content;
+    margin-inline: auto;
+    /* transform: translate(-30%); */
+  }
+
+  .my-card {
+    height: 100px;
+    width: 230px;
+    margin-inline: 10px;
+  }
+  .my-header-col.one {
+    animation: move-x 25s linear infinite;
+    /* animation: none; */
+  }
+  .my-header-col.two {
+    animation: move-x-right 25s linear infinite;
+    /* animation: none; */
+  }
+  .my-header-col.one {
+    margin-top: 0;
+  }
+}
+
+@keyframes move-x {
+  0% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+@keyframes move-x-right {
+  0% {
+    transform: translateX(30%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}

@@ -1,0 +1,273 @@
+main {
+  font-family: "Cairo", sans-serif;
+}
+section {
+  padding-block: 20px;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/022/862/529/non_2x/sport-car-on-black-background-illustration-ai-generative-free-photo.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.328);
+  z-index: 1;
+}
+.intro {
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 5px;
+}
+.intro h1 {
+  background: linear-gradient(to right, gold, rgb(255, 180, 180));
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.rating {
+  margin-bottom: 10px;
+}
+.rating i {
+  color: gold;
+}
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.client .client-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.client .client-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.client-name {
+  display: flex;
+  align-items: end;
+  margin-top: 20px;
+}
+.client-name h4 {
+  margin-bottom: 0;
+}
+owl-carousel-o {
+  direction: ltr !important;
+}
+.accordion {
+  width: 70%;
+  margin-inline: auto;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.accordion-header button {
+  font-weight: 600;
+  color: #726767;
+  text-align: start;
+}
+.accordion-body {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.813);
+}
+.accordion-button::after {
+  background-image: url(https://tools.royalnanoceramic.com/icons/add.png);
+  margin-left: 0;
+  margin-right: auto;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed),
+.accordion-collapse.collapse.show,
+.accordion-collapse.collapsing {
+  background-color: #726767;
+  color: white !important;
+}
+.accordion-item:first-of-type {
+  border-top-left-radius: var(--bs-accordion-border-radius);
+  border-top-right-radius: var(--bs-accordion-border-radius);
+}
+.vid-card {
+  position: relative;
+  overflow: hidden;
+  max-height: 550px;
+  display: flex;
+  align-items: center;
+}
+.video-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  color: white;
+  margin: 15px;
+  width: 100%;
+  max-width: 250px;
+}
+.video-content p {
+  font-weight: 500;
+  color: #eeeeeec2;
+}
+.vid-card .thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.vid-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.51);
+  z-index: 1;
+}
+.play-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(220, 219, 219);
+  border-radius: 50%;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.play-icon img {
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .accordion {
+    width: 100%;
+  }
+}
+
+/* form */
+
+.form h3 {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form .form-control,
+.form-select {
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  border-radius: 0px !important;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form .form-control:focus,
+.form-select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group-text {
+  background-color: #f1f1f1;
+  border-right: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+.form input {
+  border-left: 0;
+}
+
+.form .btn-primary {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form .btn-primary:hover {
+  background-color: #357abd;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.form .btn-primary:focus {
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+@media (max-width: 768px) {
+  .form h3 {
+    font-size: 1.3rem;
+  }
+}
+.policy-card ul li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: auto;
+  right: 0;
+  color: #d4af37;
+}
+
+.form-select {
+  background-position: left 0.75rem center;
+}
+
+.my-sticky-btn {
+  position: fixed;
+  top: 80%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 999999;
+}
+.form {
+  position: relative;
+  z-index: 99999999;
+}

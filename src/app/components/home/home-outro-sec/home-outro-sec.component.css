@@ -1,0 +1,53 @@
+section {
+  margin-block: 150px;
+}
+h5 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+a {
+  font-size: 6vw;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: -3px;
+  position: relative;
+}
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 0;
+  height: 5px;
+  background-color: black;
+  transition: width 0.5s;
+}
+.lang-ar a::before {
+  bottom: 0;
+}
+a:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+@media screen and (max-width: 700px) {
+  h5 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  a {
+    font-size: 2rem;
+    /* line-height: 2rem; */
+    width: 100%;
+
+    letter-spacing: 0;
+  }
+
+  a::before {
+    bottom: 0;
+    height: 2px;
+  }
+}
