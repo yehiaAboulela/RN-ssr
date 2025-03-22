@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { LanguageService } from '../../../shared/services/language.service';
 
 @Component({
-  selector: 'app-timline',
-  templateUrl: './timline.component.html',
-  styleUrl: './timline.component.css',
+    selector: 'app-timline',
+    templateUrl: './timline.component.html',
+    styleUrl: './timline.component.css',
+    standalone: false
 })
 export class TimlineComponent {
   constructor(private LanguageService: LanguageService) {}

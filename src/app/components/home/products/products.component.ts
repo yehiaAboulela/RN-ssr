@@ -2,9 +2,10 @@ import { LanguageService } from './../../../shared/services/language.service';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrl: './products.component.css',
+    selector: 'app-products',
+    templateUrl: './products.component.html',
+    styleUrl: './products.component.css',
+    standalone: false
 })
 export class ProductsComponent {
   constructor(private LanguageService: LanguageService) {}

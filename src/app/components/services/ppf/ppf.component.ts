@@ -3,9 +3,10 @@ import { LanguageService } from './../../../shared/services/language.service';
 import { Component } from '@angular/core';
 declare var Fancybox: any;
 @Component({
-  selector: 'app-ppf',
-  templateUrl: './ppf.component.html',
-  styleUrl: './ppf.component.css',
+    selector: 'app-ppf',
+    templateUrl: './ppf.component.html',
+    styleUrl: './ppf.component.css',
+    standalone: false
 })
 export class PpfComponent {
   constructor(private LanguageService: LanguageService) {}

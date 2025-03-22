@@ -4,9 +4,10 @@ import { BlogsService } from '../../shared/services/blogs.service';
 import { BlogItem } from '../../shared/interface/blog-item';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrl: './blog.component.css',
+    selector: 'app-blog',
+    templateUrl: './blog.component.html',
+    styleUrl: './blog.component.css',
+    standalone: false
 })
 export class BlogComponent implements OnInit {
   constructor(

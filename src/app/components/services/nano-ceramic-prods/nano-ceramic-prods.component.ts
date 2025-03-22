@@ -4,9 +4,10 @@ import { Component } from '@angular/core';
 
 declare var Fancybox: any;
 @Component({
-  selector: 'app-nano-ceramic-prods',
-  templateUrl: './nano-ceramic-prods.component.html',
-  styleUrl: './nano-ceramic-prods.component.css',
+    selector: 'app-nano-ceramic-prods',
+    templateUrl: './nano-ceramic-prods.component.html',
+    styleUrl: './nano-ceramic-prods.component.css',
+    standalone: false
 })
 export class NanoCeramicProdsComponent {
   constructor(private LanguageService: LanguageService) {}

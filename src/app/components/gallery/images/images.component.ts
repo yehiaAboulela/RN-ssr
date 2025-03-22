@@ -3,9 +3,10 @@ import { GalleryService } from '../../../shared/services/gallery.service';
 import { LanguageService } from '../../../shared/services/language.service';
 declare var Fancybox: any;
 @Component({
-  selector: 'app-images',
-  templateUrl: './images.component.html',
-  styleUrl: './images.component.css',
+    selector: 'app-images',
+    templateUrl: './images.component.html',
+    styleUrl: './images.component.css',
+    standalone: false
 })
 export class ImagesComponent {
   constructor(

@@ -1,8 +1,11 @@
 import {
+  afterNextRender,
   AfterViewInit,
   Component,
   ElementRef,
+  Inject,
   OnInit,
+  PLATFORM_ID,
   ViewChild,
 } from '@angular/core';
 import { LanguageService } from '../../../shared/services/language.service';
@@ -11,9 +14,16 @@ import { LanguageService } from '../../../shared/services/language.service';
   selector: 'app-header-alt',
   templateUrl: './header-alt.component.html',
   styleUrl: './header-alt.component.css',
+  standalone: false,
 })
 export class HeaderAltComponent implements OnInit, AfterViewInit {
-  constructor(private LanguageService: LanguageService) {}
+  constructor(private LanguageService: LanguageService) {
+    afterNextRender(() => {
+      const videoElement = this.bgVideo.nativeElement;
+      videoElement.play(); // Plays the video
+      videoElement.muted = true;
+    });
+  }
   @ViewChild('bgVideo', { static: false })
   bgVideo!: ElementRef<HTMLVideoElement>;
 
@@ -26,10 +36,5 @@ export class HeaderAltComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngAfterViewInit(): void {
-    // Ensure video starts playing after the view initializes
-    const videoElement = this.bgVideo.nativeElement;
-    videoElement.play(); // Plays the video
-    videoElement.muted = true;
-  }
+  ngAfterViewInit(): void {}
 }

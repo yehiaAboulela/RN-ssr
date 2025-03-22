@@ -3,9 +3,10 @@ import { LanguageService } from '../../../shared/services/language.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-comparison-slider',
-  templateUrl: './comparison-slider.component.html',
-  styleUrl: './comparison-slider.component.css',
+    selector: 'app-comparison-slider',
+    templateUrl: './comparison-slider.component.html',
+    styleUrl: './comparison-slider.component.css',
+    standalone: false
 })
 export class ComparisonSliderComponent {
   constructor(private LanguageService: LanguageService) {}

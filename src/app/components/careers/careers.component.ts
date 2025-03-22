@@ -4,9 +4,10 @@ import { ApplicationsService } from '../../shared/services/applications.service'
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-careers',
-  templateUrl: './careers.component.html',
-  styleUrl: './careers.component.css',
+    selector: 'app-careers',
+    templateUrl: './careers.component.html',
+    styleUrl: './careers.component.css',
+    standalone: false
 })
 export class CareersComponent {
   cv: any = '';

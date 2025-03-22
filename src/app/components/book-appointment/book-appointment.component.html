@@ -1,1 +1,201 @@
+<section>
+  <div class="form-wrapper">
+    <h1>Book Appointment</h1>
+    <form [formGroup]="bookForm" (ngSubmit)="sendForm()">
+      <div class="two-inputs">
+        <div class="input-parent">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            placeholder="Enter your name"
+            formControlName="fullName"
+          />
+        </div>
+        <div class="input-parent">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Enter phone Number"
+            formControlName="phoneNumber"
+          />
+        </div>
+      </div>
+      <div class="two-inputs">
+        <div class="input-parent">
+          <label for="carType">Car Type</label>
+          <input
+            type="text"
+            name="carType"
+            id="carType"
+            placeholder="Enter car type"
+            formControlName="carType"
+          />
+        </div>
+        <div class="input-parent">
+          <label for="carModel">Car Model</label>
+          <input
+            type="text"
+            name="carModel"
+            id="carModel"
+            placeholder="Enter car model"
+            formControlName="carModel"
+          />
+        </div>
+      </div>
+      <div class="input-parent">
+        <label for="service">Choose Service</label>
+        <select id="service" name="service" formControlName="service">
+          <option value="nanoCeramic">Nano Ceramic</option>
+          <option value="PPF">PPF</option>
+          <option value="sunFilms">Sun Films</option>
+        </select>
+      </div>
+      <div class="input-parent">
+        <label for="branch">Choose Branch</label>
+        <select id="branch" name="branch" formControlName="branch">
+          <option value="nanoCeramic">Nano Ceramic</option>
+          <option value="PPF">PPF</option>
+          <option value="sunFilms">Sun Films</option>
+        </select>
+      </div>
+      <div class="input-parent">
+        <label for="notes">Additional Notes</label>
+        <textarea
+          name="notes"
+          id="notes"
+          rows="5"
+          placeholder="Leave your message here"
+          formControlName="notes"
+        ></textarea>
+      </div>
 
+      <button type="submit" [disabled]="!bookForm.valid">Submit</button>
+    </form>
+  </div>
+</section>
+
+<div class="modal" [ngClass]="{ active: modal }" id="appointmentModal">
+  <div class="card">
+    <div class="card-header">
+      <h2>Appointment Confirmation</h2>
+      <button class="close-button" (click)="closeModal()">&times;</button>
+    </div>
+    <div class="card-body">
+      <p>Thank you for booking your appointment!</p>
+      <p>
+        If you need to make any changes, please contact us at
+        <a href="mailto:support@example.com">support&#64;royalnanoceramic.com</a
+        >.
+      </p>
+    </div>
+    <div class="card-footer">
+      <button class="confirm-button" (click)="closeModal()">Confirm</button>
+    </div>
+  </div>
+</div>
+<section>
+  <div class="form-wrapper">
+    <h1>Book Appointment</h1>
+    <form [formGroup]="bookForm" (ngSubmit)="sendForm()">
+      <div class="two-inputs">
+        <div class="input-parent">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            placeholder="Enter your name"
+            formControlName="fullName"
+          />
+        </div>
+        <div class="input-parent">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Enter phone Number"
+            formControlName="phoneNumber"
+          />
+        </div>
+      </div>
+      <div class="two-inputs">
+        <div class="input-parent">
+          <label for="carType">Car Type</label>
+          <input
+            type="text"
+            name="carType"
+            id="carType"
+            placeholder="Enter car type"
+            formControlName="carType"
+          />
+        </div>
+        <div class="input-parent">
+          <label for="carModel">Car Model</label>
+          <input
+            type="text"
+            name="carModel"
+            id="carModel"
+            placeholder="Enter car model"
+            formControlName="carModel"
+          />
+        </div>
+      </div>
+      <div class="input-parent">
+        <label for="service">Choose Service</label>
+        <select id="service" name="service" formControlName="service">
+          <option value="nanoCeramic">Nano Ceramic</option>
+          <option value="PPF">PPF</option>
+          <option value="sunFilms">Sun Films</option>
+        </select>
+      </div>
+      <div class="input-parent">
+        <label for="branch">Choose Branch</label>
+        <select id="branch" name="branch" formControlName="branch">
+          <option value="tanta">tanta</option>
+          <option value="october">october</option>
+          <option value="madenetNasr">Madenet Nasr</option>
+          <option value="zayed">zayed</option>
+          <option value="mohandeseen">Mohandeseen</option>
+          <!-- <option value="madenetNasr">Madenet Nasr</option> -->
+        </select>
+      </div>
+      <div class="input-parent">
+        <label for="notes">Additional Notes</label>
+        <textarea
+          name="notes"
+          id="notes"
+          rows="5"
+          placeholder="Leave your message here"
+          formControlName="notes"
+        ></textarea>
+      </div>
+
+      <button type="submit" [disabled]="!bookForm.valid">Submit</button>
+    </form>
+  </div>
+</section>
+
+<div class="modal" [ngClass]="{ active: modal }" id="appointmentModal">
+  <div class="card">
+    <div class="card-header">
+      <h2>Appointment Confirmation</h2>
+      <button class="close-button" (click)="closeModal()">&times;</button>
+    </div>
+    <div class="card-body">
+      <p>Thank you for booking your appointment!</p>
+      <p>
+        If you need to make any changes, please contact us at
+        <a href="mailto:support@example.com">support&#64;royalnanoceramic.com</a
+        >.
+      </p>
+    </div>
+    <div class="card-footer">
+      <button class="confirm-button" (click)="closeModal()">Confirm</button>
+    </div>
+  </div>
+</div>

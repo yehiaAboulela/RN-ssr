@@ -5,9 +5,10 @@ import { ActivatedRoute } from '@angular/router';
 import { BlogItem } from '../../shared/interface/blog-item';
 
 @Component({
-  selector: 'app-blog-details',
-  templateUrl: './blog-details.component.html',
-  styleUrl: './blog-details.component.css',
+    selector: 'app-blog-details',
+    templateUrl: './blog-details.component.html',
+    styleUrl: './blog-details.component.css',
+    standalone: false
 })
 export class BlogDetailsComponent implements OnInit {
   constructor(

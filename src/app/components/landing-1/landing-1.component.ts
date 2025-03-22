@@ -1,10 +1,11 @@
 import { LeadsService } from './../../shared/services/leads.service';
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 declare var Fancybox: any;
 import { trigger, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'app-landing-1',
   templateUrl: './landing-1.component.html',
@@ -18,12 +19,14 @@ import { Router } from '@angular/router';
       transition(':leave', [animate('300ms ease-out', style({ opacity: 0 }))]),
     ]),
   ],
+  standalone: false,
 })
 export class Landing1Component {
   constructor(
     private fb: FormBuilder,
     private LeadsService: LeadsService,
-    private router: Router
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {}
   notValid: string = '';
   valid: string = '';
@@ -80,7 +83,9 @@ export class Landing1Component {
     );
   }
   scrollToForm() {
-    document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' });
+    if (isPlatformBrowser(this.platformId)) {
+      document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   leadForm = this.fb.group({

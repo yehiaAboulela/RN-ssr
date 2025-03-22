@@ -3,9 +3,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { LanguageService } from '../../../shared/services/language.service';
 
 @Component({
-  selector: 'app-image-slider',
-  templateUrl: './image-slider.component.html',
-  styleUrl: './image-slider.component.css',
+    selector: 'app-image-slider',
+    templateUrl: './image-slider.component.html',
+    styleUrl: './image-slider.component.css',
+    standalone: false
 })
 export class ImageSliderComponent {
   constructor(private LanguageService: LanguageService) {}

@@ -2,10 +2,11 @@ import { LanguageService } from './../../../shared/services/language.service';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class HeaderComponent implements OnInit {
   lang: string = 'en';

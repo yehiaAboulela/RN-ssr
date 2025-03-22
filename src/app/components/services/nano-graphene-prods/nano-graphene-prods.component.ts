@@ -3,9 +3,10 @@ import { LanguageService } from './../../../shared/services/language.service';
 import { Component } from '@angular/core';
 declare var Fancybox: any;
 @Component({
-  selector: 'app-nano-graphene-prods',
-  templateUrl: './nano-graphene-prods.component.html',
-  styleUrl: './nano-graphene-prods.component.css',
+    selector: 'app-nano-graphene-prods',
+    templateUrl: './nano-graphene-prods.component.html',
+    styleUrl: './nano-graphene-prods.component.css',
+    standalone: false
 })
 export class NanoGrapheneProdsComponent {
   constructor(private LanguageService: LanguageService) {}

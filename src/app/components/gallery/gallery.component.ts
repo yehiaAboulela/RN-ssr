@@ -3,9 +3,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { LanguageService } from '../../shared/services/language.service';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.css',
+    selector: 'app-gallery',
+    templateUrl: './gallery.component.html',
+    styleUrl: './gallery.component.css',
+    standalone: false
 })
 export class GalleryComponent {
   constructor(private LanguageService: LanguageService) {}

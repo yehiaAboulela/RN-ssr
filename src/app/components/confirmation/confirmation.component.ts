@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import * as intlTelInput from 'intl-tel-input';
 import { ConfirmationService } from '../../shared/services/confirmation.service';
@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
   selector: 'app-confirmation',
   templateUrl: './confirmation.component.html',
   styleUrl: './confirmation.component.css',
+  standalone: false,
 })
-export class ConfirmationComponent {
+export class ConfirmationComponent implements AfterViewInit {
   constructor(
     private FormBuilder: FormBuilder,
     private ConfirmationService: ConfirmationService,
@@ -48,7 +49,7 @@ export class ConfirmationComponent {
     image: ['', [Validators.required]],
   });
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.costumizePhoneInput();
   }
 

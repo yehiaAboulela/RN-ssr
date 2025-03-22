@@ -2,9 +2,10 @@ import { LanguageService } from './../../../shared/services/language.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-solutions-sec',
-  templateUrl: './solutions-sec.component.html',
-  styleUrl: './solutions-sec.component.css',
+    selector: 'app-solutions-sec',
+    templateUrl: './solutions-sec.component.html',
+    styleUrl: './solutions-sec.component.css',
+    standalone: false
 })
 export class SolutionsSecComponent {
   constructor(private LanguageService: LanguageService) {}

@@ -1,20 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { LeadsService } from '../../shared/services/leads.service';
 import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 declare var Fancybox: any;
 
 @Component({
   selector: 'app-landing-1-ar',
   templateUrl: './landing-1-ar.component.html',
   styleUrl: './landing-1-ar.component.css',
+  standalone: false,
 })
 export class Landing1ArComponent {
   constructor(
     private fb: FormBuilder,
     private LeadsService: LeadsService,
-    private router: Router
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {}
   notValid: string = '';
   valid: string = '';
@@ -71,7 +74,9 @@ export class Landing1ArComponent {
     );
   }
   scrollToForm() {
-    document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' });
+    if (isPlatformBrowser(this.platformId)) {
+      document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   leadForm = this.fb.group({

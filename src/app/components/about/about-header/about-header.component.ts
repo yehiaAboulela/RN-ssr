@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { LanguageService } from '../../../shared/services/language.service';
 
 @Component({
-  selector: 'app-about-header',
-  templateUrl: './about-header.component.html',
-  styleUrl: './about-header.component.css',
+    selector: 'app-about-header',
+    templateUrl: './about-header.component.html',
+    styleUrl: './about-header.component.css',
+    standalone: false
 })
 export class AboutHeaderComponent {
   constructor(private LanguageService: LanguageService) {}

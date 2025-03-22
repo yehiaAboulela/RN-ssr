@@ -3,9 +3,10 @@ import { LanguageService } from './../../../shared/services/language.service';
 import { Component } from '@angular/core';
 declare var Fancybox: any;
 @Component({
-  selector: 'app-thermal-insulation',
-  templateUrl: './thermal-insulation.component.html',
-  styleUrl: './thermal-insulation.component.css',
+    selector: 'app-thermal-insulation',
+    templateUrl: './thermal-insulation.component.html',
+    styleUrl: './thermal-insulation.component.css',
+    standalone: false
 })
 export class ThermalInsulationComponent {
   constructor(private LanguageService: LanguageService) {}

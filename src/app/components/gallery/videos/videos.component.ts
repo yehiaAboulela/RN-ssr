@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 declare var Fancybox: any;
 
 @Component({
-  selector: 'app-videos',
-  templateUrl: './videos.component.html',
-  styleUrl: './videos.component.css',
+    selector: 'app-videos',
+    templateUrl: './videos.component.html',
+    styleUrl: './videos.component.css',
+    standalone: false
 })
 export class VideosComponent {
   openVideo(src: string): void {

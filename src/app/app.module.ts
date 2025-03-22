@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -101,7 +101,7 @@ import { ThankYouComponent } from './components/thank-you/thank-you.component';
     ReactiveFormsModule,
     ToastrModule.forRoot(),
   ],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(), provideClientHydration(withEventReplay())],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
