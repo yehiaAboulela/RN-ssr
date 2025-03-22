@@ -30,20 +30,20 @@ export class AppComponent {
       });
     }
 
-    // afterNextRender(() => {
-    //   const userLang: string = localStorage.getItem('lang') || 'en';
-    //   this.LanguageService.lang.next(userLang);
-    //   if (localStorage.getItem('lang')) {
-    //     if (isPlatformBrowser(this.platformId)) {
-    //       this.renderer.removeClass(document.body, 'lang-en');
-    //       this.renderer.removeClass(document.body, 'lang-ar');
+    afterNextRender(() => {
+      const userLang: string = localStorage.getItem('lang') || 'en';
+      this.LanguageService.lang.next(userLang);
+      if (localStorage.getItem('lang')) {
+        if (isPlatformBrowser(this.platformId)) {
+          this.renderer.removeClass(document.body, 'lang-en');
+          this.renderer.removeClass(document.body, 'lang-ar');
 
-    //       this.renderer.addClass(
-    //         document.body,
-    //         `lang-${localStorage.getItem('lang')}`
-    //       );
-    //     }
-    //   }
-    // });
+          this.renderer.addClass(
+            document.body,
+            `lang-${localStorage.getItem('lang')}`
+          );
+        }
+      }
+    });
   }
 }
