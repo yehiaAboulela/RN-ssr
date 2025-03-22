@@ -21,9 +21,7 @@ export class AppComponent {
     private renderer: Renderer2,
     private LanguageService: LanguageService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
-
-  ngOnInit(): void {
+  ) {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init({
         duration: 1200,
@@ -46,4 +44,6 @@ export class AppComponent {
       }
     });
   }
+
+  ngOnInit(): void {}
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="ar" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="9130011090050517808" datatype="html">
+        <source>رويال</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/header-alt/header-alt.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6483851648670264463" datatype="html">
+        <source>نانو سيراميك</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/header-alt/header-alt.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3585807980697223372" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-gold&quot;&gt;"/>رويال<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> نانو سيراميك </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/header-alt/header-alt.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7804042975066583195" datatype="html">
+        <source>احم سيارتك</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/header-alt/header-alt.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
